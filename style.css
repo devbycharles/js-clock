@@ -1,0 +1,81 @@
+html body {
+    font-family: 'Orbitron', sans-serif;
+    background: #191919
+}
+
+
+:root {
+    --main-gray: #8a8a8a;
+    --white: #fff;
+    --main-green: #00FF97;
+}
+
+.container {
+    margin-top: 8rem;
+}
+
+h1 {
+    color: var(--main-gray);
+}
+
+hr {
+    color: var(--white);
+}
+
+.row {
+    display: flex;
+}
+
+.p-2 {
+    color: var(--main-gray);
+}
+
+.opening-day { 
+    color: var(--main-green); 
+}
+
+#time {
+    font-size: 7em;
+    color: var(--main-green);
+}
+
+
+button {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    background: none;
+    border: none;
+    color: var(--main-gray);
+}
+
+
+/** On click */
+button:hover {
+    color: var(--main-green);
+}
+
+button:active {
+    background: none;
+    border: none;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/** Mobile View */
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+    }
+
+    #days {
+        width: 98%;
+        font-size: 0.6rem;
+        justify-content: center;
+    }
+
+    #time {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+  }
